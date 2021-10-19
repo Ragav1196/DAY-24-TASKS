@@ -1,0 +1,100 @@
+body{
+    background-color: beige;
+    background-image: linear-gradient(to right top, #6ba9d1, #5db0d0, #55b7cb, #56bcc3, #5fc1b9, #61c0a4, #70be8a, #85b970, #a1aa42, #c3941e, #e57421, #ff4444);
+    min-height: 100vh;
+    margin: 0px 200px;
+}
+
+.userDataContainer > div{
+    background-color: rgb(240, 228, 228);
+    margin: 5rem;
+    padding: 1rem;    
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+        /* to create a gap between flex divided elements */
+    transition: all 0.35s;
+}
+
+.readPic{
+    border-radius: 50%;
+    height: 159px;
+}
+
+.readName{
+    font-size: 1.4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.userDataContainer > div:hover{
+    transform: scale(1.1);
+    box-shadow: 9px 12px 6px 2px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 9px 12px 6px 2px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 9px 12px 6px 2px rgba(0, 0, 0, 0.72);
+}
+
+.userDataContainer >  div:hover p{
+    color: crimson;
+}
+
+.editUserContainer{
+    display: none;    
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px ;
+}
+
+.addContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 25px;
+}
+
+.addUsername, .addUserpic{  
+    height: 41px;
+    width: 279px;
+}
+
+.addButton{
+    width: 100px;
+    height: 46px;
+}
+
+.addButton:hover, .deleteButton:hover, .editButton:hover, .saveButton:hover{
+    background-color: rgb(146, 162, 214);
+}
+
+.saveContainer{
+    position: relative;
+    top: -73px;
+    left: 187px;
+}
+
+.saveButton{
+    width: 83px;
+    height: 42px;
+}
+
+.deleteContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.deleteContainer img, .editImage{
+    height: 32px;
+    filter: grayscale(1);
+}
+
+.editButton{
+    margin-top: 20px;
+    height: 21px;
+    width: 68px;
+}
+
+.editContainer{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
